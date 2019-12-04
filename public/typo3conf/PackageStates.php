@@ -95,6 +95,15 @@ return [
         'bootstrap_package' => [
             'packagePath' => 'typo3conf/ext/bootstrap_package/',
         ],
+        'book_store_site' => [
+            'packagePath' => 'typo3conf/ext/book_store_site/',
+        ],
+        'book_store_app' => [
+            'packagePath' => 'typo3conf/ext/book_store_app/',
+        ],
+        'extension_builder' => [
+            'packagePath' => 'typo3conf/ext/extension_builder/',
+        ],
     ],
     'version' => 5,
 ];

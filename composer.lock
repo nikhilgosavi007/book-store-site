@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "58cba700cd7e6d910436b87f07ae7dce",
+    "content-hash": "edd3770daadcdee124f991a21484cd6b",
     "packages": [
         {
             "name": "algo26-matthias/idna-convert",
@@ -1072,6 +1072,39 @@
             "homepage": "https://hof-university.de",
             "keywords": [
                 "TYPO3 CMS"
+            ]
+        },
+        {
+            "name": "nikhilgosavi/book-store-app",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/book_store_app",
+                "reference": "58dfb183d252528babd096a4629b1c7b0c899180"
+            },
+            "require": {
+                "typo3/cms-core": "^9.5"
+            },
+            "replace": {
+                "nikhilgosavi/book-store-app": "self.version",
+                "typo3-ter/book-store-app": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "NikhilGosavi\\BookStoreApp\\": "Classes"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "NikhilGosavi\\BookStoreApp\\Tests\\": "Tests"
+                }
+            },
+            "authors": [
+                {
+                    "name": "NIkhil Gosavi",
+                    "role": "Developer"
+                }
             ]
         },
         {
@@ -4497,10 +4530,77 @@
             "time": "2019-12-02T06:33:10+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "friendsoftypo3/extension-builder",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfTYPO3/extension_builder.git",
+                "reference": "a402ea074d0ee31c24c404f77e852048e61a3570"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/extension_builder/zipball/a402ea074d0ee31c24c404f77e852048e61a3570",
+                "reference": "a402ea074d0ee31c24c404f77e852048e61a3570",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "nikic/php-parser": "^4.0",
+                "typo3/cms-backend": "~9.5",
+                "typo3/cms-core": "~9.5"
+            },
+            "replace": {
+                "typo3-ter/extension-builder": "self.version"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2",
+                "nimut/testing-framework": "^4",
+                "sebastian/diff": "^3.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "EBT\\ExtensionBuilder\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Nico de Haen",
+                    "role": "Developer"
+                },
+                {
+                    "name": "extension_builder Development Team",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tool to kickstart and maintain TYPO3 extensions",
+            "homepage": "https://github.com/FriendsOfTYPO3/extension_builder",
+            "keywords": [
+                "extension",
+                "extension_builder",
+                "typo3"
+            ],
+            "time": "2019-12-04T21:30:05+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "nikhilgosavi/book-store-app": 20,
+        "friendsoftypo3/extension-builder": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
